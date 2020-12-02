@@ -42,7 +42,6 @@ model
 .session.sql
 test
 .prettierrc
-Procfile
 stats.json
 runtime.txt
 .editorConfig

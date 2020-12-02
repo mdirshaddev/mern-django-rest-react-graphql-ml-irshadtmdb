@@ -2,6 +2,8 @@
 
 **Movie Database Hosted on Heroku and Data managed by AWS.**
 
+**Django will be hosted on somehere else for the purpose of machine learning api.**
+
 ## Microservices 1
 
 **MERN Stack Webapp with postgresql and mongodb as the database. To store and retrieve data.**

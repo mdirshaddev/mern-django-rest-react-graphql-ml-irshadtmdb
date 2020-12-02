@@ -1,0 +1,52 @@
+// Md Irshad's VS code configuration.
+{
+    "jshint.enable": false,
+    "python.pythonPath": "env\\Scripts\\python.exe",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#ca6bfa",
+        "activityBar.activeBorder": "#fbd384",
+        "activityBar.background": "#ca6bfa",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#fbd384",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#b839f9",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#ca6bfa",
+        "titleBar.activeBackground": "#b839f9",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#b839f999",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#b839f9",
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "html.validate.styles": false,
+    "scss.validate": false,
+    "files.autoSave": "afterDelay",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "IrshadTMDb",
+            "database": "IrshadTMDb",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "MovieRecommendations",
+            "database": "MovieRecommendations",
+            "username": "postgres"
+        }
+    ],
+    "git.ignoreLimitWarning": true,
+    "python.linting.enabled": false
+}

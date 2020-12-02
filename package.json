@@ -1,0 +1,68 @@
+{
+  "name": "express-mongoose-sequelize-rest-graphql-postgressql-mongodb",
+  "version": "0.0.1",
+  "description": "IrshadTMDb is my first full stack project. I will be using firebase for chatting.",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon server.js",
+    "build": "cross-env NODE_ENV=production node server.js",
+    "super-build": "cd ./frontend && npm run build",
+    "dev-build": "npm run super-build && npm run start",
+    "prod-build": "npm run super-build && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdirshaddev/mern-django-graphql-ml-irshadtmdb.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Python",
+    "Django",
+    "MERN",
+    "PostgresSQL",
+    "passportjs",
+    "sequelizer",
+    "MongoDB ATLAS",
+    "mongoose",
+    "REST API",
+    "GraphQL API",
+    "firebase"
+  ],
+  "author": "Md Irshad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdirshaddev/mern-django-graphql-ml-irshadtmdb/issues"
+  },
+  "homepage": "https://github.com/mdirshaddev/mern-django-graphql-ml-irshadtmdb#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "apollo-datasource": "^0.7.2",
+    "apollo-server-express": "^2.19.0",
+    "aws-sdk": "^2.802.0",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "express-session": "^1.17.1",
+    "graphql": "^15.4.0",
+    "graphql-resolvers": "^0.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "pg": "^8.4.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.4",
+    "socket-io": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "nodemon": "^2.0.4"
+  }
+}

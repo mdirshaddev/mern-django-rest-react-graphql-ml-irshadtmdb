@@ -1,0 +1,51 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+frontend/node_modules
+
+# production
+build
+
+# Django
+__pycache__/
+migrations/
+
+# Jupyter
+.ipynb_checkpoints
+
+# ML Data
+ml-*.zip
+
+# Python virtualenv folder
+env/
+
+
+# Intentionally hiding these files
+######################################################
+# REST CLIENT vscode extension use file
+*.rest  
+# powerpoint to demonstrate the backend architecture
+*.pptx
+# database of django sqlite3
+db.sqlite3
+# test data to use in github pages
+testData.json
+# Timeline of work detail
+Timeline.xlsx  
+# Python machine learning model
+model
+# Travis For now will be disabled
+.travis.yml
+# No need of some garbages
+.gitattributes
+.session.sql
+test
+.prettierrc
+Procfile
+stats.json
+runtime.txt
+.editorConfig
+.env
+#graphql
+query.graphql

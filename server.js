@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // routes for handling express routes
-const router = require('express').Router();
+// const router = require('express').Router();
 
 // to handle environement variable
 const dotenv = require('dotenv');
@@ -27,10 +27,10 @@ const environment = process.env.NODE_ENV;
 const stage = require('./config/server.config')[environment];
 
 // Relational database SQL (PostgresSQL)
-const SequelizeDB = require('./config/database.SQL.config');
+// const SequelizeDB = require('./config/database.SQL.config');
 
 // Non relational databse NoSQL (MongoDB)
-const NoSQL_DB = require('./config/database.NoSQL.config');
+// const NoSQL_DB = require('./config/database.NoSQL.config');
 
 // Environment identification
 if (environment !== 'production') {
@@ -50,16 +50,16 @@ app.use(bodyParser.urlencoded({ urlencoded: true }))
 // middleware for CORS work
 app.use(cors());
 
-// to validate SQL (postgresSQL) connection
-SequelizeDB.sequelize.sync({force: true})
-  .then(()=>console.log('Drop and re-sync database'))
-  .catch(err=>console.log(err));
+// // to validate SQL (postgresSQL) connection
+// SequelizeDB.sequelize.sync({force: true})
+//   .then(()=>console.log('Drop and re-sync database'))
+//   .catch(err=>console.log(err));
 
-// to validate NoSQL (MongoDB) connection
-NoSQL_DB.on('error', console.error.bind(console, 'connection error:'));
-NoSQL_DB.once('open', function() {
-  console.log('MongoDB is connected.');
-});
+// // to validate NoSQL (MongoDB) connection
+// NoSQL_DB.on('error', console.error.bind(console, 'connection error:'));
+// NoSQL_DB.once('open', function() {
+//   console.log('MongoDB is connected.');
+// });
 
 
 // for purpose of building in production

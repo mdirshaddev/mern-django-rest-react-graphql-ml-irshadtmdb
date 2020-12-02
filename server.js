@@ -23,7 +23,7 @@ const logger = require('morgan');
 
 // config to check it's development or production
 // eslint-disable-next-line no-undef
-const environment = process.env.NODE_ENV;
+const environment = process.env.NODE_ENV || "production";
 const stage = require('./config/server.config')[environment];
 
 // Relational database SQL (PostgresSQL)
@@ -76,6 +76,6 @@ if(process.env.NODE_ENV==='production'){
 }
 
 // initialising the express server
-app.listen(`${stage.port}`, () => {
-  console.log(`Server is running at ${stage.port}`);
+app.listen(`${stage.port || 4000}`, () => {
+  console.log(`Server is running at ${stage.port || 4000}`);
 })

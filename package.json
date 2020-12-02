@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon server.js",
-    "build": "cross-env NODE_ENV=production node server.js",
+    "build": "node server.js",
     "super-build": "cd ./frontend && npm run build",
     "dev-build": "npm run super-build && npm run start",
     "prod-build": "npm run super-build && npm run build"

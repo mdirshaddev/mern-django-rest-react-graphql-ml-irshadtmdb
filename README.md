@@ -1,9 +1,13 @@
-# MERN, Django, REST, GraphQL, Machine learning, IrshadTMDb
+# Povingo
 
 [![Build Status](https://travis-ci.org/mdirshaddev/mern-django-rest-react-graphql-ml-irshadtmdb.svg?branch=test2)](https://travis-ci.org/mdirshaddev/mern-django-rest-react-graphql-ml-irshadtmdb)
 
 [![Coverage Status](https://coveralls.io/repos/github/mdirshaddev/mern-django-rest-react-graphql-ml-irshadtmdb/badge.svg?branch=test2)](https://coveralls.io/github/mdirshaddev/mern-django-rest-react-graphql-ml-irshadtmdb?branch=test2)
 
+
+## Tech Stack
+
+* ### MERN, Django, REST, GraphQL, Machine learning
 
 **Movie Database Hosted on Heroku and Data managed by AWS.**
 
